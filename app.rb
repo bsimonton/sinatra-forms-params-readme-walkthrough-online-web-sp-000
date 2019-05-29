@@ -2,7 +2,11 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  
+  class App
+  get '/' do
+    "Hello World"
+  end
+end
   
   get '/food_form' do
     erb :food_form
